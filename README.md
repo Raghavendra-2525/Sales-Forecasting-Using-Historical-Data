@@ -34,23 +34,8 @@ This project utilizes the **[Superstore Sales Dataset](https://www.kaggle.com/da
 ## ✨ Key Features & Implementation Pipeline
 
 ### 1. Data Cleaning & Preprocessing
-* Handled missing values and eliminated duplicate records.
-* Parsed raw date strings into standard `datetime` formats.
-* Aggregated transactional data into uniform time intervals (e.g., Daily/Weekly sales).
-
 ### 2. Time-Based Feature Engineering
-To capture the cyclic nature of retail behavior, the following features were engineered:
-* **Temporal Features:** Extracting `Day`, `Month`, `Year`, and `Day of Week`.
-* **Seasonality Indicators:** Flagging weekend vs. weekday trends and holiday quarters.
-* **Lag Features & Rolling Windows:** Capturing past sales velocity to inform future patterns.
-
 ### 3. Forecasting Modeling
-* Evaluated multiple modeling approaches, ranging from baseline Linear Regression to advanced tree-based regressors (e.g., Random Forest / Gradient Boosting) tuned for time-series forecasting.
-
 ### 4. Evaluation & Error Analysis
-Models were benchmarked using robust business-centric validation metrics:
-* **Mean Absolute Error (MAE):** To understand the average dollar amount the forecast deviates from actual sales.
-* **Root Mean Squared Error (RMSE):** To penalize larger, riskier forecasting errors.
 
----
 
